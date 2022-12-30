@@ -1,7 +1,32 @@
 body {
     display: flex;
     flex-direction: column;
+
+}
+.camembertSection, .fetaSection, .manchegoSection, .goudaSection, .parmigianoSection, .intro {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 8px;
+}
 
+.camembertSection {
+    background-color: #bba06e;
 
+}
+
+.fetaSection {
+    background-color: #cbcdd0;
+}
+
+.manchegoSection {
+    background-color: #d9ca9f;
+}
+
+.goudaSection {
+    background-color: #f19a1d;
+}
+
+.parmigianoSection {
+    background-color: #888982;
 }
