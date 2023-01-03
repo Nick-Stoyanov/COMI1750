@@ -1,18 +1,97 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
 
 }
-.camembertSection, .fetaSection, .manchegoSection, .goudaSection, .parmigianoSection, .intro {
+.camembertSection, .fetaSection, .manchegoSection, .goudaSection, .parmigianoSection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.camembertParagraph, .fetaParagraph, .manchegoParagraph,.goudaParagraph, .parmigianoParagraph {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 4%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8d799;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 52px;
+    font-weight: 1000;
+    font-family: "French Script MT", Serif, sans-serif, Arial;
+}
+ul {
+    margin: 0;
+
+}
+
+.intro {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: rgba(245, 158, 38, 0.58);
+    font-size: 25px;
+}
+
+h1{
+    font-family: "French Script MT";
+    font-size: 60px;
+    padding: 16px;
+}
+
+h1.introHeading {
+    font-size: 64px;
+}
+
+blockquote{
+    font-size: 36px;
+    font-weight: 800;
+    font-family: "French Script MT";
+}
+figcaption {
+    font-size: 28px;
+    font-family: "French Script MT";
+}
+
+.navbarlink {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
     padding: 8px;
+    text-decoration: none;
+
+    list-style-type: none;
+
+}
+a:link {
+    text-decoration: none;
+    color: #f19a1d;
+
+}
+
+a:hover {
+
+    opacity: 0.5;
+    transform: scale(80%);
+
+}
+
+a:visited {
+    color:  #1f2937;
 }
 
 .camembertSection {
     background-color: #bba06e;
-
 }
 
 .fetaSection {
@@ -29,4 +108,15 @@ body {
 
 .parmigianoSection {
     background-color: #888982;
+}
+
+footer {
+    margin-top: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    color: #eeeeee;
+    font-size: 24px;
+    align-items: center;
 }
