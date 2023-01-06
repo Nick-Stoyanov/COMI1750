@@ -15,11 +15,21 @@ header {
     background-image: url("images/navbar_image.jpg");
     background-size: 100%;
 }
+
 #homebutton {
-    height: 50%;
+    transition: 1s ease;
+    height: 90%;
     padding: 8px;
 
 }
+
+#homebutton:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 1s ease;
+}
+
 
 .navbarlink {
 
