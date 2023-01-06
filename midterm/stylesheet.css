@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#navimage {
+    height: 100px;
+    width: 100%;
+    background-image: url("images/navbar_image.jpg");
+    background-size: 100%;
+}
+#homebutton {
+    height: 50%;
+    padding: 8px;
+
+}
+
+.navbarlink {
+
+    background-color: #2c3440;
+
+    box-shadow: 0px 0px 15px 5px #000000;;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 16px;
+}
+
+.codePart {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+footer {
+    box-shadow: 0px 0px 15px 5px #000000;;
+    margin-top: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    color: #eeeeee;
+    font-size: 24px;
+    align-items: center;
+}
