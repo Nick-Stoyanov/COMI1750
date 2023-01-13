@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+
 }
 
 header {
@@ -38,16 +39,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     overflow: hidden;
     margin: 0;
-    padding: 16px;
+    padding: 8px;
 }
+
 a {
     text-decoration: none;
     color: #e8e8e8;
-    font-size: 16px;
-    font-family:cursive;
+    font-size: 20px;
+    font-family: cursive;
     font-weight: 900;
     padding: 4px;
     margin: 2px;
@@ -56,19 +58,31 @@ a {
     background-color: #4a556e;
 
 }
+
+li:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+
 li {
-    margin: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 #articleSection {
-    padding: 8px 32px;
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 .codePart {
     flex: 1 1 auto;
     display: flex;
     justify-content: space-around;
-    padding: 8px;
+    padding: 64px 8px;
+
 }
 
 pre {
@@ -76,17 +90,24 @@ pre {
 }
 
 .exampleCode {
-    margin: 8px;
+    width: 80%;
+    margin: 16px;
     padding: 16px;
-
-
     box-shadow: #1f2937 1px 2px;
 }
 
 .result {
-    margin: 8px;
+    width: 80%;
+    margin: 16px;
     padding: 16px;
     box-shadow: #1f2937 1px 2px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 footer {
