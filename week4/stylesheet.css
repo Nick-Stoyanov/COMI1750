@@ -1,45 +1,56 @@
-.block
-{
+/* Code should wrap and space according to window when resizing browser.*/
+/* Changing the property froat to : left  makes the boxes orientation horizontal*/
+
+/* Red, green and blue blocks and above the gray line and to the left of the yellow box */
+.block {
     width: 100px;
     height: 100px;
-    outline: rgb(230,230,230) solid;
+    outline: rgb(230, 230, 230) solid;
     float: left;
     text-align: center;
     font-size: 2em;
 }
+
+/* Yellow block is to the right of the other blocks, seperated by a 25px margin*/
 .rightblock {
     height: 200px;
     width: 200px;
-    outline: solid  #f19a1d;
+    outline: solid #f19a1d;
     float: right;
     margin: 25px;
 }
 
+/* Set bottom block*/
 .bottomblock {
     height: 50px;
     width: auto;
-    background-color: rgb(200,200,200);
+    background-color: rgb(200, 200, 200);
 }
 
+/* Set class red*/
 .red {
-    background-color: rgb(255,180,180);
-    outline: solid rgb(200,0,0);
+    background-color: rgb(255, 180, 180);
+    outline: solid rgb(200, 0, 0);
 }
 
+/* Set class green */
 .green {
-    background-color: rgb(180,255,180);
-    outline: solid rgb(0,200,0);
+    background-color: rgb(180, 255, 180);
+    outline: solid rgb(0, 200, 0);
 }
 
+/* Set class blue*/
 .blue {
-    background-color: rgb(180,180,255);
-    outline: solid rgb(0,0,200);
+    background-color: rgb(180, 180, 255);
+    outline: solid rgb(0, 0, 200);
 }
 
+/* Set class yellow */
 .yellow {
-    background-color:  rgb(255,255,100);
+    background-color: rgb(255, 255, 100);
 }
 
+/* Set id bottom*/
 #bottom {
     clear: both;
     width: auto;
