@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tables</title>
+    </head>
+    <body>
+        <table border=1>
+            <caption>Table D -1.1<br>Aluminum Hydraulic Shoring<br>Vertical Shores<br>For soil type A</caption>
+            <thead>
+                <tr>
+                    <!-- Span row for the entire header (3 rows) -->
+                    <th rowspan="3">Depth of Trench (feet)</th>
+                    <!--Span columns foe length of entire document (5)-->
+                    <th colspan="5">Hydraulic Cylinders</th>
+                </tr>
+                <tr>
+                    <!-- Span rows to 2 so it covers both width of trench as well as values (up to 8...etc)-->
+                    <th rowspan="2">Maximum Horizontal spacing (feet)</th>
+                    <!-- Span rows to 2 so it covers both width of trench as well as values (up to 8...etc)-->
+                    <th rowspan="2">Maximum Vertical Spacing (feet)</th>
+                    <!-- Span columns to accommodate all three values (up to 8, over 8 up to 12, over 12 up to 15)-->
+                    <th colspan="3">Width of trench(feet)</th>
+                </tr>
+                <tr>
+                    <th>Up to 8</th>
+                    <th>Over 8 up to 12</th>
+                    <th>Over 12 up to 15</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <th>Over 5 up to 10</th>
+                    <td>8</td>
+                    <!-- Span rows to three to fit the first three Depth of Trench values-->
+                    <td rowspan="3">4</td>
+                    <!-- Span rows to three to fit the first three Depth of Trench values-->
+                    <td rowspan="3">2 Inch Diameter</td>
+                    <!-- Span rows to three to fit the first three Depth of Trench values-->
+                    <td rowspan="3">2 Inch Diameter note (2)</td>
+                    <!-- Span rows to three to fit the first three Depth of Trench values-->
+                    <td rowspan="3">3 Inch Diameter</td>
+                </tr>
+                <tr>
+                    <th>Over 10 up to 15</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>Over 10 up to 15</th>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>Over 20</th>
+                    <!-- Span cols to fill empty space-->
+                    <td colspan="5">NOTE(1)</td>
+                </tr>
+            
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- Span cols to fill empty space-->
+                    <td colspan="6">
+                        <p>Footnotes to tables and general notes on hydraulic shoring are found in Appendix D, Item
+                            (g)</p>
+                        <br>
+                        <p>Note(1): See Appendix D, Item (g) (1)</p>
+                        <br>
+                        <p>Note(2): See Appendix D, Item (g) (2)</p>
+                    </td>
+                
+                </tr>
+            </tfoot>
+        </table>
+    
+    </body>
+</html>
