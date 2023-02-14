@@ -79,3 +79,148 @@
 /* This is where table 2 begins */
 /* This is where table 2 begins */
 /* This is where table 2 begins */
+
+
+/*Table 2 styling */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy*/
+
+/*customize table 2 body*/
+#table2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/*customize table2 th and td*/
+#table2 th, #table2 td
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/*customize even child color*/
+#table2 tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+/*add hover effect */
+#table2 tr:hover
+{
+    background-color: #ddd;
+}
+
+/*customize th*/
+#table2 th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+
+
+/*Table 3 styling*/
+/*https://jsfiddle.net/zinoui/dB93J/*/
+
+/*Customize table3 body*/
+#table3
+{
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+
+/*Customize table3 th in thead*/
+#table3 thead th
+{
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+/*customize table3 td in tbody*/
+#table3 tbody td
+{
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+/* This is where table 3 begins */
+
+/*Custom design for table4, incorporating some of the elements used in the top three tables*/
+
+/*this table will be ugly*/
+#table4
+{
+    width: 100%;
+    table-layout: fixed;
+    background: -webkit-linear-gradient(left, #b01f1f, #d58815);
+    background: linear-gradient(to right, #b01f1f, #d58815);
+    font-family: "MS PGothic", 'Roboto', sans-serif;
+    font-size: 22px;
+    border-collapse: collapse;
+
+}
+
+/*customize caption*/
+#table4 caption
+{
+    font-size: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    background-color: #dfcf92;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*customize body*/
+#table4 tbody
+{
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 3px solid rgba(66, 66, 66, 0.3);
+}
+
+/*customize th*/
+#table4 th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+
+}
+
+/*add hover to td*/
+#table4 td:hover
+{
+    border: 2px white solid;
+}
+
+/*align text in td*/
+#table4 td
+{
+    text-align: center;
+}
