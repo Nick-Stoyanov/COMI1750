@@ -1,3 +1,4 @@
+/*customize body*/
 body
 {
     display: flex;
@@ -7,6 +8,13 @@ body
     background-color: #eaeadf;
 }
 
+/*add padding to articles*/
+article
+{
+    padding: 2vh;
+}
+
+/*Style navbar and flex to fit screen*/
 .navbar
 {
     width: 100%;
@@ -17,15 +25,17 @@ body
     flex-wrap: wrap;
     overflow: hidden;
     margin: 0;
-    padding: 2rem;
+    padding: 1rem;
+    align-items: center;
 
 }
 
+/*Customize the links with effects*/
 .navbar a
 {
     font-weight: 500;
     font-size: 18px;
-    font-family: din-condensed-web;
+    font-family: din-condensed-web Arial cursive Serif;
     font-style: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -35,40 +45,44 @@ body
 
 }
 
+/*add hover animation to links*/
 .navbar li:hover
 {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 0.8s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.33s ease;
     opacity: 0.5;
 
 }
 
 
-#homebutton
+#homebutton1
 {
     max-height: 100px;
     height: 90%;
-    padding: 8px;
 }
 
-#homebutton:hover
+/*add animation to home button*/
+#homebutton1:hover
 {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 1.2s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.33s ease;
 }
 
-#slideshow
+
+/*center main image. This can later be a slideshow.*/
+#main_image
 {
     display: flex;
     justify-content: center;
-    animation: slide 15s infinite;
+
 
 }
 
+/*position logo*/
 #logo
 {
     display: flex;
@@ -76,32 +90,16 @@ body
     align-items: center;
 }
 
-#slideshow img {
+/*adjust main image/slideshow height*/
+#main_image img
+{
     height: 80vh;
 }
-/*Animation activated by keyframes*/
-@keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(-25%);
 
-    }
-    50%{
-        transform: translateX(-50%);
-    }
 
-    75%{
-        transform: translateX(-25%);
-    }
-
-    100%{
-        transform: translateX(0);
-    }
-}
-
-.paragraph {
+/*customize paragraph box*/
+.paragraph
+{
 
     display: flex;
     flex-direction: row;
@@ -111,7 +109,9 @@ body
     margin-right: 10%;
 }
 
-.paragraph_side {
+/*customize article*/
+.paragraph_side
+{
 
     display: flex;
     flex-direction: column;
@@ -120,12 +120,16 @@ body
     margin: 5vh 5vw;
 }
 
-.paragraph img {
+/*customize image in paragraph box*/
+.paragraph img
+{
     max-height: 350px;
     margin: 5vh 5vw;
 }
 
-article {
+/*customize article*/
+article
+{
     max-width: 700px;
     font-weight: 500;
     font-size: 18px;
@@ -139,23 +143,31 @@ article {
     color: #323d4e;
 }
 
-button {
+/*customize button*/
+button
+{
     background-color: #b1353c;
-    font-size: 26px;
+    font-size: 38px;
     color: #ffffff;
-    border-radius: 3px;
+    border-radius: 12px;
     padding: 10px 28px;
 }
 
-button:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 1.2s ease;
+/*add hover animation to button*/
+button:hover
+{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.33s ease;
     cursor: pointer;
+    opacity: 0.5;
 }
 
-#IGsection{
+/*customize ig links*/
+#IGsection
+{
+
     background-color: #d2d2ca;
     display: flex;
     flex-direction: column;
@@ -163,28 +175,161 @@ button:hover {
     padding: 32px;
 }
 
-#IGsection img:hover {
+/*add hover animation to IG links*/
+#IGsection img:hover
+{
 
     transition: 0.8s ease;
     box-shadow: 0px 0px 2px 2px black;
     opacity: 0.6;
 }
- footer {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
 
- #footerTop {
-     margin: 5% 20% 5%;
- }
+#IGsection img
+{
+    height: 150px;
+    width: auto;
+}
 
- #footerBottom {
-     display: flex;
-     flex-direction: row;
-     align-items: flex-start;
- }
 
- #footerBottom div {
-     padding: 8px 8px 8px;
- }
+/*Align footer*/
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Adjust position of top part*/
+#footerTop
+{
+    margin: 5% 20% 5%;
+}
+
+/*adjust position of bottom part*/
+#footerBottom
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+/*adjust address and contact box*/
+#footerAddress, #footerContact
+{
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*customize link buttons*/
+#footerSocialMedia img
+{
+    padding: 16px;
+    height: 50px;
+    width: auto;
+}
+
+
+/*ice cream page customization*/
+
+#icecream img
+{
+    height: auto;
+    max-width: 25vw;
+}
+#icecream
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icecream h2
+{
+    font-family: din-condensed-web Arial cursive Serif;
+}
+
+
+/*menu section customization*/
+
+#brekkiemenu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#brekkiemenu h2
+{
+    font-family: din-condensed-web Arial cursive Serif;
+}
+
+#brekkiemenu img
+{
+    height: auto;
+    max-width: 25vw;
+}
+
+/*specials section customization*/
+
+#specialsmenu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#specialsmenu img
+{
+    height: auto;
+    max-width: 25vw;
+}
+
+
+/*bakery menu customization*/
+
+
+#bakerymenu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#bakerymenu img
+{
+    height: auto;
+    max-width: 25vw;
+}
+
+/*Platter menu customization*/
+
+#platters
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#platters img
+{
+    height: auto;
+    max-width: 25vw;
+}
+
+/*About us section customization*/
+
+#aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
